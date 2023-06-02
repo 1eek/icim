@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="557.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.editController">
+
+    <children>
+        <Label layoutX="42.0" layoutY="44.0" prefHeight="26.0" prefWidth="65.0" text="保险单号">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="num" layoutX="129.0" layoutY="46.0" />
+        <Label layoutX="42.0" layoutY="93.0" prefHeight="26.0" prefWidth="65.0" text="保险类型">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="137.0" prefHeight="26.0" prefWidth="65.0" text="保险金额">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="price" layoutX="129.0" layoutY="139.0" />
+        <Label layoutX="42.0" layoutY="184.0" prefHeight="26.0" prefWidth="65.0" text="支付方式">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="232.0" prefHeight="26.0" prefWidth="65.0" text="缴费账户">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="account" layoutX="129.0" layoutY="234.0" />
+        <Label layoutX="42.0" layoutY="285.0" prefHeight="26.0" prefWidth="65.0" text="缴费状态">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="328.0" prefHeight="26.0" prefWidth="65.0" text="受益人">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="beneficiary" layoutX="129.0" layoutY="330.0" />
+        <Label layoutX="42.0" layoutY="382.0" prefHeight="26.0" prefWidth="65.0" text="收益账户">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="bfAccount" layoutX="129.0" layoutY="384.0" />
+        <TextField fx:id="remark" layoutX="129.0" layoutY="439.0" />
+        <Label layoutX="42.0" layoutY="437.0" prefHeight="26.0" prefWidth="65.0" text="备注">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="save" layoutX="132.0" layoutY="489.0" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="87.0" text="保存" />
+        <ChoiceBox fx:id="type" layoutX="129.0" layoutY="95.0" prefHeight="23.0" prefWidth="161.0" />
+        <ChoiceBox fx:id="way" layoutX="129.0" layoutY="186.0" prefHeight="23.0" prefWidth="161.0" />
+        <ChoiceBox fx:id="status" layoutX="129.0" layoutY="287.0" prefHeight="23.0" prefWidth="161.0" />
+    </children>
+
+</AnchorPane>

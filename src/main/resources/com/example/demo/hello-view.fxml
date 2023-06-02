@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="635.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.example.demo.Controller.tableController">
+    <children>
+        <Button fx:id="search" alignment="CENTER" contentDisplay="TOP" layoutX="853.0" layoutY="39.0"
+                mnemonicParsing="false" onAction="#search" prefHeight="23.0" prefWidth="68.0" text="搜索">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="typeofin" layoutX="536.0" layoutY="48.0" prefHeight="23.0" prefWidth="111.0"/>
+        <Label layoutX="457.0" layoutY="48.0" prefHeight="23.0" prefWidth="68.0" text="保险险种">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label layoutX="663.0" layoutY="48.0" prefHeight="23.0" prefWidth="68.0" text="金额">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="pricein" layoutX="716.0" layoutY="48.0" prefHeight="23.0" prefWidth="89.0"/>
+        <TableView fx:id="table" layoutX="6.0" layoutY="95.0" prefHeight="540.0" prefWidth="966.0">
+            <columns>
+                <TableColumn fx:id="ID" prefWidth="75.0" text="客户编号"/>
+                <TableColumn fx:id="PolicyNumber" prefWidth="75.0" text="保单号"/>
+                <TableColumn fx:id="typesOfInsurance" prefWidth="75.0" text="保险险种"/>
+                <TableColumn fx:id="ddl" prefWidth="75.0" text="日期"/>
+                <TableColumn fx:id="price" prefWidth="75.0" text="投保金额"/>
+                <TableColumn fx:id="way" prefWidth="75.0" text="投保方式"/>
+                <TableColumn fx:id="account" prefWidth="75.0" text="缴费账户"/>
+                <TableColumn fx:id="date" prefWidth="75.0" text="缴费日期"/>
+                <TableColumn fx:id="status" prefWidth="75.0" text="缴费情况"/>
+                <TableColumn fx:id="beneficiary" prefWidth="75.0" text="受益人"/>
+                <TableColumn fx:id="bfAccount" prefWidth="75.0" text="收益账户"/>
+                <TableColumn fx:id="level" prefWidth="75.0" text="客户等级"/>
+                <TableColumn fx:id="remark" prefWidth="75.0" text="备注"/>
+            </columns>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </TableView>
+        <Button fx:id="add" layoutX="147.0" layoutY="39.0" mnemonicParsing="false" onAction="#add" prefHeight="41.0"
+                prefWidth="54.0" text="添加"/>
+        <Button fx:id="delete" layoutX="244.0" layoutY="39.0" mnemonicParsing="false" onAction="#delete"
+                prefHeight="41.0" prefWidth="54.0" text="删除"/>
+        <Button fx:id="revised" layoutX="337.0" layoutY="39.0" mnemonicParsing="false" onAction="#edit"
+                prefHeight="41.0" prefWidth="60.0" text="修改"/>
+        <Button fx:id="flush" layoutX="52.0" layoutY="39.0" mnemonicParsing="false" onAction="#flush" prefHeight="41.0"
+                prefWidth="54.0" text="刷新"/>
+    </children>
+</AnchorPane>
